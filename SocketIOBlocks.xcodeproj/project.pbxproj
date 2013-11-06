@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A7E6CEEA813945E6A48B874B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D103F8F3BCDB450AB3DF1F29 /* libPods.a */; };
+		B86C21D93E4B4C29AF2B5B7D /* libPods-SocketIOBlocksTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D9D4E6AE00B94A0F895A264E /* libPods-SocketIOBlocksTests.a */; };
 		FAE93089182AD00F00286DDD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAE93088182AD00F00286DDD /* Foundation.framework */; };
 		FAE9308B182AD00F00286DDD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAE9308A182AD00F00286DDD /* CoreGraphics.framework */; };
 		FAE9308D182AD00F00286DDD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAE9308C182AD00F00286DDD /* UIKit.framework */; };
@@ -22,6 +24,7 @@
 		FAE930AD182AD00F00286DDD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAE9308C182AD00F00286DDD /* UIKit.framework */; };
 		FAE930B5182AD00F00286DDD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FAE930B3182AD00F00286DDD /* InfoPlist.strings */; };
 		FAE930B7182AD00F00286DDD /* SocketIOBlocksTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE930B6182AD00F00286DDD /* SocketIOBlocksTests.m */; };
+		FAE930C2182AD15700286DDD /* SocketIO+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE930C1182AD15700286DDD /* SocketIO+Blocks.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		305535A7E0A74EF7BD830721 /* Pods-SocketIOBlocksTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocketIOBlocksTests.xcconfig"; path = "Pods/Pods-SocketIOBlocksTests.xcconfig"; sourceTree = "<group>"; };
+		7C24CBA108364A96A89DF171 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		D103F8F3BCDB450AB3DF1F29 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9D4E6AE00B94A0F895A264E /* libPods-SocketIOBlocksTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SocketIOBlocksTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAE93085182AD00F00286DDD /* SocketIOBlocks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocketIOBlocks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAE93088182AD00F00286DDD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FAE9308A182AD00F00286DDD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -55,6 +62,8 @@
 		FAE930B2182AD00F00286DDD /* SocketIOBlocksTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SocketIOBlocksTests-Info.plist"; sourceTree = "<group>"; };
 		FAE930B4182AD00F00286DDD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FAE930B6182AD00F00286DDD /* SocketIOBlocksTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SocketIOBlocksTests.m; sourceTree = "<group>"; };
+		FAE930C0182AD15700286DDD /* SocketIO+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SocketIO+Blocks.h"; sourceTree = "<group>"; };
+		FAE930C1182AD15700286DDD /* SocketIO+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SocketIO+Blocks.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +74,7 @@
 				FAE9308B182AD00F00286DDD /* CoreGraphics.framework in Frameworks */,
 				FAE9308D182AD00F00286DDD /* UIKit.framework in Frameworks */,
 				FAE93089182AD00F00286DDD /* Foundation.framework in Frameworks */,
+				A7E6CEEA813945E6A48B874B /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +85,7 @@
 				FAE930AB182AD00F00286DDD /* XCTest.framework in Frameworks */,
 				FAE930AD182AD00F00286DDD /* UIKit.framework in Frameworks */,
 				FAE930AC182AD00F00286DDD /* Foundation.framework in Frameworks */,
+				B86C21D93E4B4C29AF2B5B7D /* libPods-SocketIOBlocksTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,10 +95,14 @@
 		FAE9307C182AD00F00286DDD = {
 			isa = PBXGroup;
 			children = (
+				FAE930C0182AD15700286DDD /* SocketIO+Blocks.h */,
+				FAE930C1182AD15700286DDD /* SocketIO+Blocks.m */,
 				FAE9308E182AD00F00286DDD /* SocketIOBlocks */,
 				FAE930B0182AD00F00286DDD /* SocketIOBlocksTests */,
 				FAE93087182AD00F00286DDD /* Frameworks */,
 				FAE93086182AD00F00286DDD /* Products */,
+				7C24CBA108364A96A89DF171 /* Pods.xcconfig */,
+				305535A7E0A74EF7BD830721 /* Pods-SocketIOBlocksTests.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,6 +122,8 @@
 				FAE9308A182AD00F00286DDD /* CoreGraphics.framework */,
 				FAE9308C182AD00F00286DDD /* UIKit.framework */,
 				FAE930AA182AD00F00286DDD /* XCTest.framework */,
+				D103F8F3BCDB450AB3DF1F29 /* libPods.a */,
+				D9D4E6AE00B94A0F895A264E /* libPods-SocketIOBlocksTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -162,9 +179,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FAE930BA182AD00F00286DDD /* Build configuration list for PBXNativeTarget "SocketIOBlocks" */;
 			buildPhases = (
+				20822D61E9DF4BC1A4F872CF /* Check Pods Manifest.lock */,
 				FAE93081182AD00F00286DDD /* Sources */,
 				FAE93082182AD00F00286DDD /* Frameworks */,
 				FAE93083182AD00F00286DDD /* Resources */,
+				91E9992C95D64DC0B684C91F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -179,9 +198,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FAE930BD182AD00F00286DDD /* Build configuration list for PBXNativeTarget "SocketIOBlocksTests" */;
 			buildPhases = (
+				0B84EAC6160243B186A73304 /* Check Pods Manifest.lock */,
 				FAE930A5182AD00F00286DDD /* Sources */,
 				FAE930A6182AD00F00286DDD /* Frameworks */,
 				FAE930A7182AD00F00286DDD /* Resources */,
+				33B11D32ADE24390B87D3D9B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -248,6 +269,69 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0B84EAC6160243B186A73304 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		20822D61E9DF4BC1A4F872CF /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		33B11D32ADE24390B87D3D9B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-SocketIOBlocksTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91E9992C95D64DC0B684C91F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FAE93081182AD00F00286DDD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -255,6 +339,7 @@
 			files = (
 				FAE930A2182AD00F00286DDD /* ViewController.m in Sources */,
 				FAE93099182AD00F00286DDD /* AppDelegate.m in Sources */,
+				FAE930C2182AD15700286DDD /* SocketIO+Blocks.m in Sources */,
 				FAE93095182AD00F00286DDD /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -389,6 +474,7 @@
 		};
 		FAE930BB182AD00F00286DDD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C24CBA108364A96A89DF171 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -402,6 +488,7 @@
 		};
 		FAE930BC182AD00F00286DDD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C24CBA108364A96A89DF171 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -415,6 +502,7 @@
 		};
 		FAE930BE182AD00F00286DDD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 305535A7E0A74EF7BD830721 /* Pods-SocketIOBlocksTests.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SocketIOBlocks.app/SocketIOBlocks";
@@ -438,6 +526,7 @@
 		};
 		FAE930BF182AD00F00286DDD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 305535A7E0A74EF7BD830721 /* Pods-SocketIOBlocksTests.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SocketIOBlocks.app/SocketIOBlocks";
@@ -474,6 +563,7 @@
 				FAE930BC182AD00F00286DDD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FAE930BD182AD00F00286DDD /* Build configuration list for PBXNativeTarget "SocketIOBlocksTests" */ = {
 			isa = XCConfigurationList;
@@ -482,6 +572,7 @@
 				FAE930BF182AD00F00286DDD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
