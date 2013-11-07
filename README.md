@@ -1,4 +1,4 @@
-socket.IO-Blocks
-================
+README
+======
 
-Category on SocketIO to use block callbacks instead of delegate callbacks.
+Category on [socket.IO-objc](https://github.com/pkyeck/socket.IO-objc?source=c)  to use block callbacks instead of delegate callbacks.
