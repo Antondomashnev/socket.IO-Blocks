@@ -117,7 +117,7 @@
 
 - (void)connectToHost:(NSString *)host onPort:(NSInteger)port withParams:(NSDictionary *)params withCallback:(void (^)(SocketIO *, NSError *))callback{
     
-    [self connectToHost:host onPort:port withParams:params withNamespace:nil withCallback:callback];
+    [self connectToHost:host onPort:port withParams:params withNamespace:@"" withCallback:callback];
 }
 
 - (void)connectToHost:(NSString *)host onPort:(NSInteger)port withParams:(NSDictionary *)params withNamespace:(NSString *)endpoint withCallback:(void (^)(SocketIO *, NSError *))callback{
