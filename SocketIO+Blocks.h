@@ -14,20 +14,20 @@
 
 @interface SocketIO (Blocks)
 
-- (void)connectToHost:(NSString *)host onPort:(NSInteger)port withCallback:(void (^)(SocketIO *, NSError *))callback;
-- (void)connectToHost:(NSString *)host onPort:(NSInteger)port withParams:(NSDictionary *)params withCallback:(void (^)(SocketIO *, NSError *))callback;
-- (void)connectToHost:(NSString *)host onPort:(NSInteger)port withParams:(NSDictionary *)params withNamespace:(NSString *)endpoint withCallback:(void (^)(SocketIO *, NSError *))callback;
+- (void)connectToHost:(NSString *)host onPort:(NSInteger)port withCallback:(void (^)(SocketIO *socket, NSError *error))callback;
+- (void)connectToHost:(NSString *)host onPort:(NSInteger)port withParams:(NSDictionary *)params withCallback:(void (^)(SocketIO *socket, NSError *error))callback;
+- (void)connectToHost:(NSString *)host onPort:(NSInteger)port withParams:(NSDictionary *)params withNamespace:(NSString *)endpoint withCallback:(void (^)(SocketIO *socket, NSError *error))callback;
 
-- (void)addErrorHandler:(void (^)(SocketIO *, NSError *))handler forKey:(NSString *)key;
+- (void)addErrorHandler:(void (^)(SocketIO *socket, NSError *error))handler forKey:(NSString *)key;
 - (void)removeErrorHandlerForKey:(NSString *)key;
 
-- (void)addMessageHandler:(void (^)(SocketIO *, SocketIOPacket *))handler forKey:(NSString *)key;
+- (void)addMessageHandler:(void (^)(SocketIO *socket, SocketIOPacket *packet))handler forKey:(NSString *)key;
 - (void)removeMessageHandlerForKey:(NSString *)key;
 
-- (void)addJSONHandler:(void (^)(SocketIO *, SocketIOPacket *))handler forKey:(NSString *)key;
+- (void)addJSONHandler:(void (^)(SocketIO *socket, SocketIOPacket *packet))handler forKey:(NSString *)key;
 - (void)removeJSONHandlerForKey:(NSString *)key;
 
-- (void)addEventHandler:(void (^)(SocketIO *, SocketIOPacket *))handler forKey:(NSString *)key;
+- (void)addEventHandler:(void (^)(SocketIO *socket, SocketIOPacket *packet))handler forKey:(NSString *)key;
 - (void)removeEventHandlerForKey:(NSString *)key;
 
 @end
